@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Cadastra Produtos
+    </title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="./backend/bootstrap/css/estilo.css" />
+</head>
+<body>
+    <div class="cadastra">
+
+        <form method="POST" action="./backend/model/cadastra.php">
+        
+            <label>Categoria</label><br>
+            <select name="categoria">
+                <option>SELECIONE UM CATEGORIA</option>
+                <option>Sandália</option>
+                <option>Scarpin</option>
+                <option>Mule</option>
+                <option>Tricot</option>
+                <option>Moda Praia</option>
+            </select><br>
+            <label>Produto</label><br>
+            <input type="text" name="produto"/><br>
+            <label>Valor de Custo</label><br>
+            <input type="number" name="custo"/><br>
+            <label>Valor de Venda</label><br>
+            <input type="number" name="venda"/><br>
+            <label>Quantidade</label><br>
+            <input type="number" name="qtd"/><br>
+            <label>Sku</label><br>
+            <input type="text" name="sku"/><br>
+            <label>Número</label><br>
+            <input type="number" name="numero"/><br>
+            <label>Cor</label><br>
+            <select name="cor">
+                <option>SELECIONE UMA COR</option>
+                <option>Nude</option>
+                <option>Branca</option>
+                <option>Vermelha</option>
+                <option>Vinho Bordo</option>
+                <option>Caramelo</option>
+                <option>Preta</option>
+                <option>Duo</option>
+                <option>Prata</option>
+                <option>Rosa</option>
+                <option>Branca-Vinho</option>
+            </select><br>
+            <label>Ean</label><br>
+            <input type="number" name="ean"><br>
+            <input type="submit" value="Enviar"/>
+        </form>
+
+    </div>
+    
+</body>
+</html>
